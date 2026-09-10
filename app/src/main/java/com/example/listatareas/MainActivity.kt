@@ -84,14 +84,14 @@ class MainActivity : AppCompatActivity() {
         val spinnerCategory = dialogView.findViewById<Spinner>(R.id.spinner_category)
         val btnCreate = dialogView.findViewById<Button>(R.id.btn_create)
 
-        // Configurar el Spinner de categorías
+        // spinner de categorías
         val categories = arrayOf("Compra", "Trabajo", "Estudio", "Personal", "Salud", "Hogar", "Otros")
         val spinnerAdapter = ArrayAdapter(this, android.R.layout.simple_spinner_item, categories)
         spinnerAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
         spinnerCategory.adapter = spinnerAdapter
         spinnerCategory.setSelection(categories.indexOf("Personal")) // Por defecto
 
-        // Pre-llenar hora actual
+        // hora actual
         val currentTime = SimpleDateFormat("HH:mm", Locale.getDefault()).format(Date())
         editHour.setText(currentTime)
 
