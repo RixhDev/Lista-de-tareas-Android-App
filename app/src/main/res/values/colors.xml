@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="whitesmoke">#F5F5F5</color>
+    <color name="background_dark_blue">#0A0A2A</color>
+
+    <!-- Bordes y acentos -->
+    <color name="accent_magenta">#8B008B</color> <!-- magenta -->
+
+    <!-- Detalles -->
+    <color name="detail_cyan">#00CED1</color> <!-- cyan suave -->
+
+    <!-- Texto principal -->
+    <color name="text_white">#FFFFFF</color>
+
+    <!-- Texto secundario / contraste -->
+    <color name="text_whitesmoke">#F5F5F5</color>
+</resources>
