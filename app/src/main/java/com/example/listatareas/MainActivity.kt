@@ -70,7 +70,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     /**
-     * Muestra un BottomSheetDialog para crear una nueva tarea o lista.
+     * Muestra un BottomSheetDialog para crear una nueva tarea/lista.
      */
     private fun showAddTaskDialog() {
         val dialog = BottomSheetDialog(this)
@@ -85,7 +85,7 @@ class MainActivity : AppCompatActivity() {
         val btnCreate = dialogView.findViewById<Button>(R.id.btn_create)
 
         // spinner de categorías
-        val categories = arrayOf("Compra", "Trabajo", "Estudio", "Personal", "Salud", "Hogar", "Otros")
+        val categories = arrayOf("Compra", "Trabajo", "Estudios", "Personal", "Salud", "Hogar", "Otros")
         val spinnerAdapter = ArrayAdapter(this, android.R.layout.simple_spinner_item, categories)
         spinnerAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
         spinnerCategory.adapter = spinnerAdapter
